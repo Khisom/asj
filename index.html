@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kompetensi Dasar ASJ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header, main {
+      padding: 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .table-container {
+      overflow-x: auto; /* buat scroll horizontal di HP */
+      -webkit-overflow-scrolling: touch; /* smooth scroll di iOS */
+      margin: 1rem 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px; /* minimal lebar supaya tabel tidak terlalu sempit */
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
+      white-space: nowrap; /* supaya isi td tidak pecah */
+    }
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+    .server {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: 1rem 0;
+      padding: 1rem;
+    }
+    ul {
+      margin-left: 1.5rem;
+    }
+
+    /* Hilangkan media query sebelumnya yang merusak tabel
+       Agar tabel tetap standar dan bisa scroll horizontal */
+    @media (max-width: 600px) {
+      /* Tidak ada perubahan layout, tetap tabel biasa */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kompetensi Dasar Administrasi Sistem Jaringan</h1>
+    <p><strong>PENGANTAR UNTUK SISWA</strong></p>
+    <p>Anak-anak, ini adalah daftar kompetensi dasar (KD) yang seharusnya kita kuasai dalam satu tahun pelajaran. Namun, karena keterbatasan waktu dan situasi, mungkin tidak semua KD bisa kita selesaikan secara praktik langsung di kelas 11. Maka dari itu, saya siapkan cara cepatnya agar kalian tetap paham dan menguasai materi ini minimal secara konsep.</p>
+    <p><strong>Tugas kalian adalah:</strong></p>
+    <ul>
+      <li>Menulis, Memahami, dan Menghafal pengertian masing-masing server</li>
+      <li>Mengetahui aplikasi yang digunakan</li>
+    </ul>
+  </header>
+
+  <main>
+    <h2>Daftar Kompetensi Dasar</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>PENGETAHUAN</th>
+            <th>KETERAMPILAN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>3.1 Menerapkan sistem operasi jaringan</td><td>4.1 Menginstalasi sistem operasi jaringan</td></tr>
+          <tr><td>3.2 Mengevaluasi DHCP Server</td><td>4.2 Mengkonfigurasi DHCP Server</td></tr>
+          <tr><td>3.3 Mengevaluasi FTP Server</td><td>4.3 Mengkonfigurasi FTP Server</td></tr>
+          <tr><td>3.4 Mengevaluasi Remote Server</td><td>4.4 Mengkonfigurasi Remote Server</td></tr>
+          <tr><td>3.5 Mengevaluasi File Server</td><td>4.5 Mengkonfigurasi File Server</td></tr>
+          <tr><td>3.6 Mengevaluasi Web Server</td><td>4.6 Mengkonfigurasi Web Server</td></tr>
+          <tr><td>3.7 Mengevaluasi DNS Server</td><td>4.7 Mengkonfigurasi DNS Server</td></tr>
+          <tr><td>3.8 Mengevaluasi Database Server</td><td>4.8 Mengkonfigurasi Database Server</td></tr>
+          <tr><td>3.9 Mengevaluasi Mail Server</td><td>4.9 Mengkonfigurasi Mail Server</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Ringkasan Instalasi Server di Debian 12</h2>
+
+    <div class="server">
+      <h3>DHCP Server</h3>
+      <p><strong>Pengertian:</strong> Server yang memberikan alamat IP secara otomatis ke klien dalam jaringan.</p>
+      <p><strong>Perintah Instalasi:</strong> <code>apt install isc-dhcp-server</code></p>
+      <p><strong>Aplikasi:</strong> isc-dhcp-server</p>
+    </div>
+
+    <div class="server">
+      <h3>FTP Server</h3>
+      <p><strong>Pengertian:</strong> Server untuk mentransfer file antar komputer melalui jaringan.</p>
+      <p><strong>Perintah Instalasi:</strong> <code>apt install vsftpd</code></p>
+      <p><strong>Aplikasi:</strong> vsftpd</p>
+    </div>
+
+    <div class="server">
+      <h3>Remote Server</h3>
+      <p><strong>Pengertian:</strong> Server yang memungkinkan kontrol komputer dari jarak jauh.</p>
+      <p><strong>Perintah Instalasi:</strong> <code>apt install openssh-server</code></p>
+      <p><strong>Aplikasi:</strong> OpenSSH</p>
+    </div>
+
+    <div class="server">
+      <h3>File Server</h3>
+      <p><strong>Pengertian:</strong> Server yang digunakan untuk menyimpan dan membagikan file.</p>
+      <p><strong>Perintah Instalasi:</strong> <code>apt install samba</code></p>
+      <p><strong>Aplikasi:</strong> Samba</p>
+    </div>
+
+    <div class="server">
+      <h3>Web Server</h3>
+      <p><strong>Pengertian:</strong> Server yang menyajikan halaman web ke pengguna melalui browser.</p>
+      <p><strong>Perintah Instalasi:</strong> <code>apt install apache2</code></p>
+      <p><strong>Aplikasi:</strong> Apache2</p>
+    </div>
+
+    <div class="server">
+      <h3>DNS Server</h3>
+      <p><strong>Pengertian:</strong> Server yang menerjemahkan nama domain menjadi alamat IP.</p>
+      <p><strong>Perintah Instalasi:</strong> <code>apt install bind9</code></p>
+      <p><strong>Aplikasi:</strong> BIND9</p>
+    </div>
+
+    <div class="server">
+      <h3>Database Server</h3>
+      <p><strong>Pengertian:</strong> Server yang menyimpan dan mengelola data dalam bentuk basis data.</p>
+      <p><strong>Perintah Instalasi:</strong> <code>apt install mariadb-server</code></p>
+      <p><strong>Aplikasi:</strong> MariaDB</p>
+    </div>
+
+    <div class="server">
+      <h3>Mail Server</h3>
+      <p><strong>Pengertian:</strong> Server yang mengelola pengiriman dan penerimaan email.</p>
+      <p><strong>Perintah Instalasi:</strong> <code>apt install postfix</code></p>
+      <p><strong>Aplikasi:</strong> Postfix</p>
+    </div>
+<body>
+  <h1>Latihan Soal: Server dan Layanan Jaringan</h1>
+
+  <div class="section">
+    <h2>A. Pilihan Ganda</h2>
+    <ol type="1">
+      <li>Fungsi utama dari <strong>DHCP Server</strong> adalah ...
+        <ul type="A">
+          <li>A. Menyimpan data pengguna</li>
+          <li>B. Memberikan alamat IP secara otomatis</li>
+          <li>C. Menyediakan halaman web</li>
+          <li>D. Mengelola file secara daring</li>
+        </ul>
+      </li>
+      <li>Yang termasuk layanan <strong>Web Server</strong> adalah ...
+        <ul type="A">
+          <li>A. Samba</li>
+          <li>B. Apache</li>
+          <li>C. FileZilla</li>
+          <li>D. Putty</li>
+        </ul>
+      </li>
+      <li>Berikut ini merupakan contoh layanan <strong>Remote Server</strong>, kecuali ...
+        <ul type="A">
+          <li>A. SSH</li>
+          <li>B. Telnet</li>
+          <li>C. FTP</li>
+          <li>D. RDP</li>
+        </ul>
+      </li>
+      <li>Untuk mengunggah dan mengunduh file ke server, layanan yang digunakan adalah ...
+        <ul type="A">
+          <li>A. DNS</li>
+          <li>B. FTP</li>
+          <li>C. DHCP</li>
+          <li>D. SSH</li>
+        </ul>
+      </li>
+      <li>DNS Server berfungsi untuk ...
+        <ul type="A">
+          <li>A. Menyimpan dokumen digital</li>
+          <li>B. Menyambungkan client ke jaringan lokal</li>
+          <li>C. Mengubah nama domain menjadi IP address</li>
+          <li>D. Menampilkan halaman login</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>B. Isian Singkat</h2>
+    <ol start="6">
+      <li>Nama layanan server yang digunakan untuk membagikan alamat IP secara otomatis adalah ____________.</li>
+      <li>Perintah untuk memulai layanan Apache di Linux adalah ____________.</li>
+      <li>Dalam layanan FTP, perangkat client dapat melakukan dua hal, yaitu ____________ dan ____________ file.</li>
+      <li>Layanan yang memungkinkan kita mengakses server dari jarak jauh melalui terminal adalah ____________.</li>
+      <li>Perangkat lunak di Linux yang sering digunakan sebagai Web Server adalah ____________.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>C. Uraian Singkat</h2>
+    <ol start="11">
+      <li>Jelaskan perbedaan utama antara FTP Server dan File Server!</li>
+      <li>Mengapa layanan DHCP sangat dibutuhkan dalam jaringan besar?</li>
+      <li>Sebutkan dua keuntungan menggunakan Remote Server seperti SSH bagi administrator jaringan!</li>
+      <li>Apa yang terjadi jika DNS Server tidak bekerja dengan baik?</li>
+      <li>Bagaimana cara kerja Web Server dalam menampilkan halaman web kepada pengguna?</li>
+    </ol>
+  </div>
+</body>
+  </main>
+</body>
+</html>
